@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=MuseoModerno&family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald&family=Playball&family=Playfair+Display:ital,wght@0,400;0,500;1,500&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Spectral+SC:wght@300&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* Page */
+.page {
+  padding-top: 60px;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  height: 70px;
+  background-color: #64a74b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: all 0.5s;
+  -webkit-box-shadow: 0px 8px 22px 6px rgba(34, 60, 80, 0.28);
+  -moz-box-shadow: 0px 8px 22px 6px rgba(34, 60, 80, 0.28);
+  box-shadow: 0px 8px 22px 6px rgba(34, 60, 80, 0.28);
+}
+.header.red {
+  background-color: #64a74b;
+  -webkit-box-shadow: 0px 8px 22px 6px rgba(34, 60, 80, 0.28);
+  -moz-box-shadow: 0px 8px 22px 6px rgba(34, 60, 80, 0.28);
+  box-shadow: 0px 8px 22px 6px rgba(34, 60, 80, 0.28);
+}
+/* Nav */
+.nav {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.nav__link {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+/* Section */
+.section {
+  height: calc(100vh - 70px);
+  padding: 15px 15px;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.section--gray {
+  background-color: #f7f7f7;
+}
+.lines {
+  max-width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+}
+.goldLine {
+  width: 100px;
+  height: 1px;
+  border: solid 1px #e27c05;
+}
+.cub {
+  width: 65px;
+  height: 15px;
+  border: solid 1px #e27c05;
+  background-color: #e27c05;
+}
+.planirovka {
+  width: 90%;
+  height: 75%;
+  margin: 0 auto;
+  background: url(../manas/img/Манас-план2.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+.kvartira {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://belgravia.nurzaman.kg/assets/img/gallery/4.jpg);
+  background-position: 0;
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 10px;
+}
+.aboutKvartiry {
+  width: 45%;
+  height: 80%;
+  margin-top: 3%;
+  border-radius: 10px;
+  background-color: rgba(175, 175, 175, 0.3);
+  text-align: left;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+ul li {
+  margin-left: 15%;
+  margin-top: 5%;
+}
+#hata {
+  background: url(../../vyborKvartir/img/кв_1_картинки/01_кв_1_2.png);
+  background-position: center;
+  background-size: cover;
+}
+#manas {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://belgravia.nurzaman.kg/assets/img/gallery/4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.whites {
+  color: #fff;
+}
+.uli {
+  max-width: 800px;
+  color: #fff;
+  font-size: 17px;
+  line-height: 1.2;
+}
+ul li {
+  text-align: start;
+}
+
+/* CALCULATOR */
+.calculate {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../manas/img/2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.choose {
+  width: 45%;
+  height: 75%;
+  background-color: rgba(175, 175, 175, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.choose img {
+  width: 95%;
+  height: 95%;
+}
+.choose h1 {
+  color: #fff;
+}
+input {
+  width: 300px;
+  height: 35px;
+  padding: 10px 20px;
+  border: solid darkred;
+  border-radius: 20px 20px 20px 20px;
+  text-align: center;
+  margin-top: 1%;
+}
+p {
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 3%;
+}
+button {
+  text-align: center;
+  padding: 10px 20px;
+  border: solid darkred;
+  border-radius: 20px 20px 20px 20px;
+  margin-top: 3%;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #222;
+}
+
+
+
+@media screen and (max-width: 650px) {
+  .nav {
+    font-size: 0.7rem;
+  }
+  .nav__link {
+    padding: 0 5px;
+  }
+  .section__title {
+    font-size: 1rem;
+  }
+  .planirovka {
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .kvartira {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .kvartira {
+    background-position: center;
+  }
+  #manas {
+    margin-top: 3%;
+  }
+  
+  .aboutKvartiry {
+    width: 90%;
+    font-size: 1rem;
+  }
+  .uli {
+    font-size: 0.9rem;
+  }
+  ul li {
+    margin-left: 5%;
+  }
+  .calculate {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    border-radius: 5px;
+  }
+  .choose {
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  #last {
+    height: 100%;
+  }
+  iframe {
+    width: 100%;
+    height: 400px;
+  }
+
+  footer {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 460px) and (min-width: 360px) {
+  .uli {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .uli {
+    font-size: 0.7rem;
+  }
+  .nav__link {
+    padding: 0 1px;
+  }
+  input {
+    width: 220px;
+  }
+  ul li {
+    margin-left: 0;
+  }
+}

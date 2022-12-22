@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+        
+        <a class="nav__link" href="../../JK Manas/index.html">Главная</a>
+        <a class="nav__link" href="#">О проекте</a>
+        <a class="nav__link" href="#">Планировки</a>
+    </nav>
+</header>
+
+<div class="page">
+  <!-- <button type="button" id="testBtn">BUTTON</button> -->
+  <section class="section">
+      <h2 class="section__title">ПЛАНИРОВКА ТИПОВОГО ЭТАЖА</h2>
+      <div class="lines">
+        <div class="goldLine"></div>
+        <div class="cub"></div>
+        <div class="goldLine"></div>
+      </div>
+      <h4>Ниже вы можете ознакомиться с планировкой этажа.</h4>
+      <div class="planirovka"></div>
+  </section>
+
+  <section class="section  section--gray">
+      <h2 class="section__title">3-х комн.квартира</h2>
+      <div class="kvartira">
+        <div class="aboutKvartiry" id="hata"></div>
+        <div class="aboutKvartiry">
+          <ul>
+            <li>Холл- 12,59 м 2</li>
+            <li>Студия- 27,34 м2</li>
+            <li>Сан узел 2- 4,16 м2</li>
+            <li>Спальня 1- 16,63 м2</li>
+            <li>Балкон - 3,7 м2</li>
+            <li>Гардероб - 3,18 м2</li>
+            <li>ИТОГО- 67,60 м 2</li>
+          </ul>
+        </div>
+      </div>
+  </section>
+
+  <section class="section" id="manas">
+      <h2 class="section__title whites">О ЖК 'Манас'</h2>
+      <ul class="uli">
+        <li><strong>Местность</strong> <br> Местность Для жилого комплекса выбрано поистине благодатное местоположение – в южных микрорайонах столицы. Экологически чистая местность, упоительный горный воздух, обилие зеленых насаждений, отдаленность от шумного центра и собственная парковая зона делают комплекс подлинным раем на земле.</li>
+        <li><strong> Расположение</strong> <br> Атмосфера здесь уютная и спокойная. Но до всех прелестей столичной жизни подать рукой. В районе десятки кафе, фешенебельные ночные клубы, рестораны. Рядом театры, музеи, картинные галереи. К ним не нужно ехать. К большинству можно дойти за две-трио минуты неспешным шагом.</li>
+        <li><strong>Об обьекте</strong> <br>Жилой комплекс «Манас» от строительной компании Элит-Строй. В южном районе нашей столицы мы решили расположить уникальный жилой комплекс премиум класса «Южный квартал». Данный комплекс - идеальное место для тех, кто всегда находится в центре событий, но при этом ценит уединение и комфорт! </li>
+      </ul>
+  </section>
+
+  <section class="section  section--gray" id="last">
+    <h2 class="section__title">3D тур по квартире</h2>
+    <div class="calculate">
+      <div class="choose">  
+        <iframe frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" src="https://truevirtualtours.com/ru/tour/17441/show"></iframe>
+      </div>
+      <div class="choose">
+        <iframe frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" src="https://truevirtualtours.com/ru/panorama/98566/360view"></iframe>
+      </div>
+    </div>
+</section>
+
+<section class="section  section--gray" id="last">
+  <h2 class="section__title">Ваш калькулятор рассрочки</h2>
+  <div class="calculate">
+    <div class="choose">  
+      <div class="list">
+        <h1>Калькулятор Рассрочки</h1>
+        <input type="text" id="inp11" placeholder="Сколько м.кв?"><br>
+        <input type="text" id="inp12" placeholder="Стоимость за м.кв?"><br>
+        <input type="text" id="inp2" placeholder="Оплата в %" title="30% 50% 70% 100% "><br>
+        <input type="text" id="inp3" placeholder="На 12 или 24 месяцев?"><br>
+        <button onClick="calculate()"><b>Calculate</b></button><br>
+        <button><strong>Распечатать</strong></button>
+        <p id="hata2"></p>
+        <p id="skidok"></p>
+        <p id="skidki"></p>
+        <p id="result"></p>
+      </div>
+    </div>
+    <div class="choose">
+      <img src="https://su-ab.com/upload/iblock/2d9/pro_bitrix.png" alt="">
+    </div>
+  </div>
+</section>
+
+  
+</div>
+
+<footer>
+  <nav class="nav">
+    <a class="nav__link" href="../../index.html">О компании</a>
+    <a class="nav__link" href="#">Обьекты</a>
+    <a class="nav__link" href="#">Офис продаж</a>
+</nav>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
